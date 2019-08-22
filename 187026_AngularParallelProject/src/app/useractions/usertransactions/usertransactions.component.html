@@ -1,0 +1,18 @@
+<table border="2" cellspacing="5px">
+    <tr>
+        <th><a >Account ID</a></th>
+        <th><a >Transaction Type</a></th>
+        <th>Transaction Date</th>
+        <th>Transaction Amount</th>
+        <th>To AccountId</th>
+    </tr>
+    <tr *ngFor ="let loopData of transactions" >
+        <td>{{loopData.accountId}}</td>
+        <td>{{loopData.transactionType}}</td>
+        <td>{{loopData.transactionDate}}</td>
+        <td>{{loopData.transactionAmount}}</td>
+        <td>{{loopData.toAccountId}}</td>
+    </tr>
+</table>
+<a routerLink="/useractions" class="btn btn-link">Back</a>
+
