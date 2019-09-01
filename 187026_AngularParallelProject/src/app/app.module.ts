@@ -14,8 +14,6 @@ import { FundtransferComponent } from './useractions/fundtransfer/fundtransfer.c
 import { UsertransactionsComponent } from './useractions/usertransactions/usertransactions.component';
 import { AlertComponent } from './alert/alert.component';
 import { ShowbalanceComponent } from './useractions/showbalance/showbalance.component';
-import { LogoutComponent } from './useractions/logout/logout.component';
-
 
 @NgModule({
   declarations: [
@@ -29,8 +27,7 @@ import { LogoutComponent } from './useractions/logout/logout.component';
     FundtransferComponent,
     UsertransactionsComponent,
     AlertComponent,
-    ShowbalanceComponent,
-    LogoutComponent
+    ShowbalanceComponent
   ],
   imports: [
     BrowserModule,

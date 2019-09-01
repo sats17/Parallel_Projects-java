@@ -3,7 +3,6 @@ import { FormGroup, FormBuilder, Validators } from '@angular/forms';
 import { Router } from '@angular/router';
 import { AlertService } from '../services/alert.service';
 import { BankserviceService } from '../services/bankservice.service';
-import { AuthServicesService } from '../services/auth-services.service';
 
 
 @Component({
@@ -23,9 +22,7 @@ export class SignInComponent implements OnInit {
   constructor(  private formBuilder: FormBuilder,
                 private router: Router,
                 private alertService: AlertService,
-                private bankService: BankserviceService,
-                private auth: AuthServicesService
-                ) { 
+                private bankService: BankserviceService) { 
     this.formBuilder = formBuilder;
     this.router = router;
 }
@@ -49,7 +46,6 @@ export class SignInComponent implements OnInit {
         return;
     }
 
-    this.auth.sendToken(this.loginForm.value.accountid)
     var accountid = this.loginForm.get("accountid").value;
     var password = this.loginForm.get("password").value;
 

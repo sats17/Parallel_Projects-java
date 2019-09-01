@@ -69,11 +69,6 @@ export class BankserviceService {
   }
 
   DepositAmount(amount:any):number{
-
-    if(amount !<= 0){
-      return -1
-    }
-
     for(let i = 0; i < this.registerUsers.length ; i++){
         
       if(this.currentUserAccId == this.registerUsers[i].accountId && this.currentUserAccPass == this.registerUsers[i].accountPassword ){
@@ -93,11 +88,6 @@ export class BankserviceService {
   }
 
   WithdrawAmount(amount:any):number{
-
-    if(amount !<= 0){
-      return -1
-    }
-
     for(let i = 0; i < this.registerUsers.length ; i++){
         
       if(this.currentUserAccId == this.registerUsers[i].accountId && this.currentUserAccPass == this.registerUsers[i].accountPassword ){
