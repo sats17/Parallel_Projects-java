@@ -1,0 +1,22 @@
+<h2>Mini-Statements</h2>
+<br>
+<table border="2" cellspacing="5px" >
+    <tr>
+        <th>Transaction ID</th>
+        <th>Transaction Type</th>
+        <th>AccountId</th>
+        <th>Transaction Date</th>
+        <th>Transaction Amount</th>
+        
+    </tr>
+    <tr *ngFor ="let loopData of transactions" align = "center" >
+        <td>{{loopData.transactionId}}</td>
+        <td>{{loopData.transactionType}}</td>
+        <td>{{loopData.toAccountId}}</td>
+        <td>{{loopData.transactionDate}}</td>
+        <td>{{loopData.amount}}</td>
+        
+    </tr>
+</table>
+<a routerLink="/useractions" class="btn btn-link">Back</a>
+
